@@ -1,0 +1,23 @@
+{
+	/* Navegação */
+
+	"Nav.Gestao_Fornecedor" = "Fornecedores";
+	"Nav.Gestao_Usuario" = "Usuários";
+	"Nav.Gestao_ListaDeCompras" = "Lista de compras";
+	"Nav.Gestao_Produto" = "Produtos";
+	"Nav.Home" = "Home";
+
+	"Nav.Minha_Conta" = "Minha Conta";
+	"Nav.UpdateMinhaConta" = "Atualizar meus dados";
+
+	/* Submenus */
+	"Nav.SearchProduto" = "Buscar produtos";
+	"Nav.CreateProduto" = "Cadastrar novo produto";
+	"Nav.SearchUsuario" = "Buscar usuários";
+	"Nav.CreateUsuario" = "Cadastrar novo usuário";
+	"Nav.SearchFornecedor" = "Buscar fornecedores";
+	"Nav.CreateFornecedor" = "Cadastrar novo fornecedor";
+	"Nav.SearchListaDeCompras" = "Buscar listas de compras";
+	"Nav.CreateListaDeCompras" = "Cadastrar nova lista de compras";
+
+}

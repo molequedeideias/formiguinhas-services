@@ -1,0 +1,72 @@
+(
+	{
+		name = Root;
+		children =  ("Home","Minha_Conta", "Gestao_Fornecedor", "Gestao_Produto","Gestao_ListaDeCompras","Gestao_Usuario");
+    },
+	{
+		name = "Home";
+		action = "session.navController.homeAction";
+		children = ();
+	},
+	{
+		name = "Gestao_Fornecedor";
+		action = "session.navController.queryFornecedorAction";
+		children =("SearchFornecedor","CreateFornecedor");
+	},
+	{
+		name = "Gestao_ListaDeCompras";
+		action = "session.navController.queryListaDeComprasAction";
+		children =("SearchListaDeCompras","CreateListaDeCompras");
+	},
+	{
+		name = "Gestao_Usuario";
+		action = "session.navController.queryUsuarioAction";
+		children =("SearchUsuario","CreateUsuario");
+	},
+	{
+		name = "Gestao_Produto";
+		action = "session.navController.queryProdutoAction";
+		children =("SearchProduto","CreateProduto");
+	},
+	{
+		name = "SearchUsuario";
+		action = "session.navController.queryUsuarioAction";
+	},
+	{
+		name = "CreateUsuario";
+		action = "session.navController.createUsuarioAction";
+	},
+	{
+		name = "SearchListaDeCompras";
+		action = "session.navController.queryListaDeComprasAction";
+	},
+	{
+		name = "CreateListaDeCompras";
+		action = "session.navController.createListaDeComprasAction";
+	},
+	{
+		name = "SearchProduto";
+		action = "session.navController.searchProdutoAction";
+	},
+	{
+		name = "CreateProduto";
+		action = "session.navController.createProdutoAction";
+	},
+	{
+		name = "SearchFornecedor";
+		action = "session.navController.searchFornecedorAction";
+	},
+	{
+		name = "CreateFornecedor";
+		action = "session.navController.createFornecedorAction";
+	},
+	{
+		name = "Minha_Conta";
+		action = "session.navController.minhaContaAction";
+		children = ("UpdateMinhaConta");
+	},
+	{
+		name = "UpdateMinhaConta";
+		action = "session.navController.minhaContaAction";
+	}
+)

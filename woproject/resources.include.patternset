@@ -1,0 +1,11 @@
+**/Properties
+**/*.eomodeld/
+**/*.d2wmodel
+**/*.wo/
+**/*.api
+**/*.strings
+**/*.plist
+**/*.jasper
+**/Properties.*
+**/*.sql
+**/*.jrxml

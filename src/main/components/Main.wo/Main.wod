@@ -1,0 +1,61 @@
+AssistantConditional: WOConditional {
+	condition = isAssistantCheckboxVisible;
+}
+
+ResourceURL9: WOResourceURL {
+	filename = session.theme;
+	framework = "app";
+}
+
+LACheckbox: WOCheckBox {
+	checked = wantsWebAssistant;
+}
+
+LoginButton: WOSubmitButton {
+	action = defaultPage;
+	value = session.localizer.LOGIN.LoginButtonLabel;
+}
+
+LoginForm: WOForm {
+
+}
+
+PasswordField: WOPasswordField {
+	value = password;
+	width = "16";
+}
+
+UsernameField: WOTextField {
+	value = username;
+	width = "16";
+}
+
+TituloSistemaLogin : WOString {
+  value = tituloSistemaLogin;
+}
+
+MensagemQuadroLogin : WOString {
+  value = session.localizer.LOGIN.MensagemQuadroLogin;
+}
+
+UsernameLabel : WOString {
+  value = session.localizer.LOGIN.UsernameLabel;
+}
+
+PasswordLabel : WOString {
+  value = session.localizer.LOGIN.PasswordLabel;
+}
+
+EsqueceuSenhaLabel :WOSubmitButton {
+	action = recuperarSenhaPage;
+	value = session.localizer.LOGIN.EsqueceuSenhaLabel;
+}
+
+mensagemValidacao : WOString {
+  value = mensagemValidacao;
+
+}
+
+Versao : WOString {
+  value = session.application.versao;
+}

@@ -1,0 +1,53 @@
+MainContent : WOComponentContent {
+    _unroll = YES;
+}
+
+BodyTag : WOBody {
+    class = bodyClass;
+}
+
+JQuery : ERXJavaScript {
+	framework = "app";
+	filename = "js/jquery-1.10.2.min.js";
+}
+
+JQueryMask : ERXJavaScript {
+	framework = "app";
+	filename = "js/jquery.maskedinput-1.1.4.pack.js";
+}
+
+JQueryFull : ERXJavaScript {
+	framework = "app";
+	filename = "js/jquery-1.2.6.pack.js";
+}
+
+
+HeadTag : ERD2WHead {
+}
+
+EntitiesMenu : MenuHeader {
+}
+
+ERD2WDebugFlags : ERD2WDebugFlags {
+    context = d2wContext;
+}
+
+IsDebug : WOConditional {
+    condition = application.isDevelopmentMode;
+}
+
+StyleSheets : ERMD2WCSSReference {
+    localContext = d2wContext;
+}
+
+ERMD2WStyleSheetInjector : ERMD2WStyleSheetInjector {
+  localContext = d2wContext;
+}
+
+WOLToolBar : WOLToolBar {
+  expanded = true;
+}
+
+VersaoAplicacao : WOString {
+  value = session.application.versaoAplicacao;
+}

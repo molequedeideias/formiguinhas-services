@@ -1,0 +1,10 @@
+#========================================================================
+# MIGRATIONS
+#========================================================================
+
+er.migration.migrateAtStartup=true
+er.migration.createTablesIfNecessary=true
+er.migration.modelNames=ERAttachment,Formiguinhas,ERCoreBL
+Formiguinhas.MigrationClassPrefix=net.formiguinhas.migration.Formiguinhas
+ERAttachment.MigrationClassPrefix=net.formiguinhas.migration.ERAttachment
+ERCoreBL.MigrationClassPrefix=er.corebl.migrations.ERCoreBL

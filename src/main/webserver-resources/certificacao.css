@@ -1,0 +1,480 @@
+body {
+	font-family: Arial;
+}
+
+p {
+	margin: 3px
+}
+
+.TabelaBarraMenu {
+	vertical-align: top;
+}
+
+.TabelaBarraMenu td {
+
+}
+
+.TabelaBarraMenu td a:link {
+
+}
+
+.TabelaSubsecao {
+	font-size: 10px;
+	font-family: Verdana;;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.TabelaSubsecao td {
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+}
+
+.resultado_busca {
+	font-size: 10px;
+	font-family: Verdana;;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.resultado_busca td {
+	background: #E1DDCD;
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+}
+
+.TabelaExterna td,tr {
+	padding: 2px;
+	padding-bottom: 10px;
+}
+
+.label {
+	font-weight: bold;
+	font-size: 11;
+}
+
+.italico_bold {
+	font-size: 11px;
+	font-family: Verdana;
+	font-style: italic;
+	font-weight: bold
+}
+
+.rodape {
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana;
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.rodape a:link {
+	color: #FFFFFF
+}
+
+.rodape a:visited {
+	color: #FFFFFF
+}
+
+.rodape a:hover {
+	color: #FFFFFF
+}
+
+.rodape a:active {
+	color: #FFFFFF
+}
+
+.textField2,textarea2 {
+	border: 1px solid #8F3F97;
+	font-weight: regular;
+}
+
+.tabelatopo {
+	font-size: 10px;
+	font-family: Arial;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	background: #D4CEB7;
+}
+
+.tabelatopo td {
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+}
+
+.explicacao {
+	font-style: italic;
+	font-size: 11px;
+	margin-top: 10px
+}
+
+.unidade_selecionada {
+	font-size: 12px;
+	font-family: Verdana;
+	font-weight: bold;
+	margin: 0px 10px 10px 10px;
+}
+
+.elemento_encontrado {
+	font-weight: bold;
+	background: #E1DDCD;
+}
+
+.padrao_encontrado {
+	margin-bottom: 5px;
+}
+
+.div_padrao_encontrado {
+	position: relative;
+	left: 15px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #F0EEE6;
+}
+
+.TabelaResultados {
+	font-size: 10px;
+	font-family: Verdana;;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.TabelaResultados td {
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+	bgcolor: #8f3f93
+}
+
+.buscagenerica {
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: left;
+	width: 80%;
+	color: #D4CEB7;;
+	background: #D4CEB7
+}
+
+.buscagenerica td {
+	background: #E1DDCD;;
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+}
+
+.buscagenerica a:link {
+	color: #000000
+}
+
+.buscagenerica a:visited {
+	color: #000000
+}
+
+.buscagenerica a:hover {
+	color: #000000
+}
+
+.buscagenerica a:active {
+	color: #000000
+}
+
+.white {
+	background: white;
+	width: 100%;
+}
+
+.erro {
+	color: red;
+	font-size: 11;
+}
+
+.texto_ok {
+	color: blue;
+	font-size: 12;
+}
+
+.separador_menu {
+	border-top: 1px solid black;
+}
+
+.borda_header {
+	border-bottom: 5px solid white;
+}
+
+li.listagem_erro {
+	list-style: square inside;
+	color: red;
+}
+
+
+.TabelaRelatorio {
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: left;
+	color: #D4CEB7;
+	background: #D4CEB7
+}
+
+.TabelaRelatorio th {
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+
+.TabelaRelatorio td {
+	background: white;
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+}
+
+.page-break {
+	page-break-before: always;
+	font-weight: bold;
+}
+
+
+
+.TabelaRelatorios {
+	font-size: 12px;
+	font-family: Verdana;
+	text-align: left;
+}
+
+.TabelaRelatorios th {
+	padding: 5 5 5 5;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+th.left {
+	text-align: left;
+}
+
+td.center {
+	text-align: center;
+}
+
+.titulo_relatorio {
+	font-size: 16px;
+	font-family: Verdana;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0.5cm
+}
+
+.TabelaVisualizacao {
+	font-size: 12px;
+	font-family: Verdana;
+	text-align: left;
+}
+
+.TabelaVisualizacao th {
+	padding: 5 5 5 5;
+	white-space: nowrap;
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+}
+
+.TabelaVisualizacao td {
+	padding: 5 5 5 5;
+}
+
+table.submenu {
+	font-size: 10px;
+	font-family: Verdana;;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
+table.submenu td a:link {
+	font-size: 11px;
+	font-family: Verdana;
+	color: white;
+	text-decoration: none;
+}
+
+#fixedtipdiv {
+	position: absolute;
+	padding: 2px;
+	border: 1px solid black;
+	font: normal 10px Verdana;
+	z-index: 100;
+}
+
+#PrivilegioUsuario {
+	font-size: 10px;
+	font-family: Verdana;;
+	text-transform: uppercase;
+	color: black;;
+	horizontal-align: left;
+	width: 100%
+}
+
+#NomeUsuario {
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: black;;
+	horizontal-align: left;
+	width: 100%
+}
+
+#UltimoAcesso {
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;;
+	horizontal-align: left;
+	width: 100%
+}
+
+.tabelasave {
+	background-color: #f2f0e9;
+	position: center;
+	width: 500px;
+}
+
+.relatorio_respostas {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+;
+.realtorio_respostas th {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.relatorio_respostas td {
+	border-right-style: solid;
+	border-right-width: thin;
+	padding: 0.3cm;
+}
+
+.divefeitoDownloadTodos {
+	border-color: #777777;
+	color: black;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.divefeitoDownloadTopicos {
+	border-color: #777777;
+	color: black;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	left: 30px;
+	margin-bottom: 0.5cm;
+	margin-left: 1.5cm;
+	margin-right: 0.5cm;
+	margin-top: 0.5cm;
+	position: relative;
+}
+
+.divefeitoDownloadHoras {
+	background-color: #E1DDCD;
+	border-color: #777777;
+	color: black;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 0.2cm;
+	margin-left: 0.2cm;
+	margin-right: 0.2cm;
+	margin-top: 0.2cm;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.divefeitoDownloadNome {
+	background-color: #E1DDCD;
+	border-color: #777777;
+	color: black;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 15px;
+	text-align: justify;
+	white-space: nowrap;
+}
+
+.divefeitoDownloadProva {
+	background-color: #E1DDCD;
+	border-color: #777777;
+	color: black;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 15px;
+	text-align: justify;
+	white-space: nowrap;
+}
+
+.divefeitoDownload {
+	background-color: #E1DDCD;
+	border-color: #777777;
+	color: black;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 15px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.divTable {
+	background-color: #D4CEB7;
+	margin-bottom: 0.1cm;
+	margin-left: 0.2cm;
+	width: 60%;
+}
+
+.anylinkcss {
+	background-color: #d4ceb7;
+	color: #000000;
+	font-color: white;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	position: absolute;
+	visibility: hidden;
+	width: 130;
+	z-index: 100;
+}
+
+.divTableWhite {
+	width: 100%;
+}
+
+.anylinkcss a {
+	background-color: orange;
+	display: block;
+	font-color: white;
+	text-align: center;
+	text-decoration: none;
+	width: 148;
+}
+
+.anylinkcss a:hover {
+	background-color: #FF8E00;
+}

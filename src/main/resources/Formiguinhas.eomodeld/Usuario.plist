@@ -1,0 +1,15 @@
+{
+    attributes = (
+        {columnName = email; name = email; prototypeName = varchar50; }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = login; name = login; prototypeName = varchar16; }, 
+        {columnName = nome; name = nome; prototypeName = varchar50; }, 
+        {columnName = password; name = password; prototypeName = varchar16; }
+    ); 
+    attributesUsedForLocking = (email, id, login, nome, password); 
+    className = "net.formiguinhas.negocios.Usuario"; 
+    classProperties = (email, login, nome, password); 
+    externalName = Usuario; 
+    name = Usuario; 
+    primaryKeyAttributes = (id); 
+}

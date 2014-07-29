@@ -1,0 +1,9 @@
+{
+    attributes = ({allowsNull = N; name = id; prototypeName = id; }); 
+    attributesUsedForLocking = (id); 
+    className = "net.formiguinhas.negocios.Produto"; 
+    externalName = Produto; 
+    fetchSpecificationDictionary = {}; 
+    name = Produto; 
+    primaryKeyAttributes = (id); 
+}

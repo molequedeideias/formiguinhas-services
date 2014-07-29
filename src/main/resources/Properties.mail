@@ -1,0 +1,30 @@
+#########################################################################
+# Configuracao de Emails
+#########################################################################
+
+## CONTA FROM
+conta.from = equipe@educacaodistancia.org.br
+
+er.javamail.centralize=false
+er.javamail.defaultEncoding=UTF-8
+er.javamail.debugEnabled=true
+er.javamail.milliSecondsWaitIfSenderOverflowed=6000
+
+### ------ Config conta amzon
+er.javamail.adminEmail=equipe@educacaodistancia.org.br
+er.javamail.smtpHost=email-smtp.us-east-1.amazonaws.com
+er.javamail.smtpAuth=true
+er.javamail.smtpUser=AKIAJBUY4HUUANYNROHA
+er.javamail.smtpPassword=AuYMYX1lsJvp4x9g5Bl/41aOTxan3Wm8w1diPLKCTfH/
+
+er.javamail.smtpPort=465
+mail.[smtpProtocol].port=465
+# SMTP: smtp SMTP/SSL: smtps
+er.javamail.smtpProtocol=smtps
+
+## COMO SOBRESCREVER NAS INSTANCIAS PROPRIEDADES PADRAO
+#-propriedade valor
+# tem que ter o '-' antes e não tem igual nem nada é propriedade <espaço> valor
+#-conta.from equipe@educacaodistancia.org.br
+#-er.javamail.adminEmail equipe@educacaodistancia.org.br
+#-er.javamail.smtpUser equipe@educacaodistancia.org.br

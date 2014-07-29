@@ -1,0 +1,202 @@
+TABLE.list-report {
+	MARGIN: 10px auto;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: white;
+	width: 100%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+	font-size: 10px;
+}
+
+TABLE.list-report TH {
+	BORDER-RIGHT: white 1px solid;
+	COLOR: #fff;
+	BACKGROUND-COLOR: #8b0003
+}
+
+TABLE.list-report TR {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+
+TABLE.list-report TD {
+	BORDER-RIGHT: 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 1px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: 1px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 1px solid;
+	TEXT-ALIGN: left
+}
+
+.cabecalho {
+	width: 100%;
+	border-width: 0;
+}
+
+.cabecalho tr td {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+	font-size: 13px;
+	text-align: center;
+	border: solid 1px black;
+}
+
+.alinhar-esqueda {
+	font-size: 10px;
+	text-align: left;
+}
+
+
+#titulo {
+	font-size: 18px;
+}
+
+TABLE.tabela-geral {
+	margin: 0px;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: white;
+	width: auto;
+	font-size: 9px;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+}
+
+TABLE.tabela-geral td {
+
+	BORDER-COLLAPSE: collapse;
+	border: solid 1px black;
+}
+
+TABLE.tabela-rvs-geral {
+	MARGIN: 10px auto;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: white;
+	width: auto;
+	font-size: 9px;
+	text-align: center;
+	border: solid 1px black;
+	BORDER-RIGHT: 1px solid;
+	BORDER-TOP: 1px solid;
+	BORDER-LEFT: 1px solid;
+	BORDER-BOTTOM: 1px solid;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+}
+
+TABLE.tabela-rvs-cabecalho {
+	MARGIN: 10px auto;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: white;
+	width: 100%;
+	font-size: 9px;
+	text-align: center;
+	border: solid 1px black;
+	BORDER-RIGHT: 1px solid;
+	BORDER-TOP: 1px solid;
+	BORDER-LEFT: 1px solid;
+	BORDER-BOTTOM: 1px solid;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+}
+
+TABLE.tabela-rvs-geral td {
+
+	BORDER-COLLAPSE: collapse;
+	border: solid 1px black;
+	BORDER-RIGHT: 1px solid;
+	BORDER-TOP: 1px solid;
+	BORDER-LEFT: 1px solid;
+	BORDER-BOTTOM: 1px solid;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+}
+
+TABLE.tabela-rvs-cabecalho td {
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: white;
+	border: solid 1px black;
+	BORDER-RIGHT: 1px solid;
+	BORDER-TOP: 1px solid;
+	BORDER-LEFT: 1px solid;
+	BORDER-BOTTOM: 1px solid;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+}
+
+td.caixa-habilitada {
+	width: 40px;
+	BORDER-RIGHT: 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 1px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: 1px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 1px solid;
+	TEXT-ALIGN: center;
+	vertical-align: middle;
+	border-collapse: collapse;
+	font-family: Wingdings;
+
+}
+
+td.caixa-habilitada a {
+	text-decoration: none;
+}
+
+td.caixa-desabilitada {
+	width: 40px;
+	height: 20px;
+	BORDER-RIGHT: 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 1px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: 1px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 1px solid;
+	vertical-align: middle;
+	border-collapse: collapse;
+	background-color: silver;
+	font-size: 10px;
+	text-align: center;
+	border: solid 1px black;
+}
+
+td.blococaixa-instrucoes {
+	width: 50px;
+	vertical-align: top;
+	text-align: center;
+}
+
+td.blococaixa-simples {
+	text-align: left;
+
+}
+
+td.blococaixa-externo{
+	width: 400px;
+	text-align: left;
+}
+
+.form-rvs {
+padding: 0px;
+margin: 0px;
+height: auto;;
+}
+
+
+
+.ds1
+  /*agl rulekind: base;*/
+{
+font-weight
+:
+
+bold
+;
+
+}

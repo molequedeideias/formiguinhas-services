@@ -1,0 +1,143 @@
+#################################
+# CONFIGURACOES DO LOG
+#################################
+
+log4j.loggerFactory=er.extensions.logging.ERXLogger$Factory
+log4j.rootCategory=INFO,A1
+log4j.appender.A1=er.extensions.logging.ERXConsoleAppender
+log4j.appender.A1.layout=er.extensions.logging.ERXPatternLayout
+log4j.appender.A1.layout.ConversionPattern=%d{MMM dd HH:mm:ss} %$[%#] %-5p %c %x - %m%n
+
+# log4j.appender.A1.layout.ConversionPattern=%d{MMM dd HH:mm:ss} %$[%#] (%F:%L) %-5p %c %x - %m%n
+# Note that (%F:%L) is fairly slow and shouldn't be used in performance intensive logging
+# The above pattern will produce logs that look like:
+# Jun 18 17:46:18 MyAppName[4002] (MyClassFile.java:40) INFO er.foo.MyCategory  - Some log
+
+# Custom Categories - These are the main categories and sub categories
+#       that are used in frameworks.
+# Base Category
+log4j.logger.er=INFO
+
+log4j.logger.er.extensions.components=ERROR
+
+log4j.logger.session=INFO, R
+
+# Here are a few log4j sub-categories that are interesting.
+# Don't forget that in developement mode this file will get reloaded
+# everytime it changes, so if you say want to turn adaptor debugging
+# on in the middle of the app simply set the below category to debug.
+# Very handy.
+
+# ERExtensions
+# Transaction - Switching this to debug will start the sql ouputting.
+#log4j.logger.er.transaction.adaptor.EOAdaptorDebugEnabled=WARN
+
+# Fixes - Turning this on will show all the models that are loaded
+log4j.logger.er.extensions.fixes.ERSharedEOLoader=INFO
+
+er.extensions.ERXNSLogLog4jBridge=INFO
+#log4j.logger.er.eo.ERXGenericRecord=DEBUG
+log4j.logger.com.webobjects.eoaccess.ERXEntity=DEBUG
+log4j.logger.er.validation.ERXEntityClassDescription=DEBUG
+log4j.logger.er.default.ERXEntityClassDescription=DEBUG
+#log4j.logger.er.extensions.ERXDatabaseContextDelegate=WARN
+log4j.logger.er.extensions.ERXConfigurationManager=INFO
+#log4j.logger.er.extensions.ERXApplication.RequestHandling=ERROR
+log4j.logger.er.extensions.validation.ERXValidationFactory=DEBUG
+
+log4j.logger.ognl.helperfunction.WOHelperFunctionParser=INFO
+
+log4j.logger.er.extensions.eof.ERXModelGroup=INFO
+log4j.logger.er.extensions.eof.ERXEC=ERROR
+log4j.logger.er.extensions.ERXEC.LockTrace=INFO
+
+#################################
+# MOSTRAR SQL
+#################################
+log4j.logger.er.transaction.adaptor.EOAdaptorDebugEnabled=WARN
+
+er.extensions.eof.ERXAdaptorChannelDelegate.trace.entityMatchPattern=.*
+er.extensions.eof.ERXAdaptorChannelDelegate.trace.milliSeconds.debug=5
+er.extensions.eof.ERXAdaptorChannelDelegate.trace.milliSeconds.info=100
+er.extensions.eof.ERXAdaptorChannelDelegate.trace.milliSeconds.warn=10000
+er.extensions.eof.ERXAdaptorChannelDelegate.trace.milliSeconds.error=20000
+er.extensions.eof.ERXAdaptorChannelDelegate.trace.maxLength=3000
+
+log4j.logger.net.formiguinhas.app.Session=DEBUG
+log4j.logger.net.formiguinhas.app.Application=DEBUG
+#################################
+# LOCALIZACAO
+#################################
+log4j.logger.er.extensions.localization.ERXLocalizer=INFO
+
+#################################
+# REGRAS
+#################################
+
+#log4j.logger.er.directtoweb.rules.ERD2WTraceRuleFiringEnabled = INFO
+log4j.logger.er.directtoweb.assignments.defaults.ERDDefaultDisplayNameAssignment=ERROR
+
+
+#################################
+# PAGINAS E COMPONENTES
+#################################
+log4j.logger.com.webobjects.directtoweb.ERD2WUtilities=ERROR
+log4j.logger.ognl.helperfunction.WOHelperFunctionHTMLParser=ERROR
+log4j.logger.moleque.utils.appserver.MolResourceRequestHandler=ERROR
+#log4j.logger.moleque.d2w.extensions.display.MolD2WPropertyNameWithCss=WARN
+log4j.logger.moleque.d2w.extensions.query.MolQueryPageWithCss=ERROR
+log4j.logger.com.moleque.certificacao=ERROR
+log4j.logger.com.moleque.certificacao.componentes.d2w.JarResourceRequestHandler=ERROR
+log4j.logger.moleque.d2w.extensions.query.MolQueryNumberWithChoices=ERROR
+log4j.logger.moleque.d2w.extensions.MOLEditNumberWithChoices=ERROR
+log4j.logger.moleque.d2w.extensions.MOLListPage=ERROR
+log4j.logger.er.extensions.components.javascript.ERXJSTwoLevelEditToOneRelationship=ERROR
+log4j.logger.er.extensions.components.javascript.ERXJSPopUpRelationPicker=ERROR
+log4j.logger.er.directtoweb.components.relationships.ERDQueryTwoLevelRelationship=ERROR
+log4j.logger.er.extensions.components.ERXArrayChooser=ERROR
+log4j.logger.er.modern.look.pages.ERMODEditRelationshipPage=INFO
+log4j.logger.er.modern.look.pages.ERMODWizardCreationPage=INFO
+log4j.logger.er.directtoweb.components.strings.ERDEditStringWithChoices=INFO
+log4j.logger.er.r2d2w.components.R2D2WEditDate=INFO
+
+#################################
+# REGRAS E ASSIGNMENTS
+#################################
+log4j.logger.er.directtoweb.assignments.ERDValueFromPropertiesAssignment=DEBUG
+log4j.logger.er.directtoweb.assignments.delayed.ERDDelayedSwitchAssignment=DEBUG
+
+#################################
+# CLASSES DE NEGOCIO
+#################################
+
+#################################
+#DELEGATES
+#################################
+log4j.logger.net.formiguinhas.delegates.MOLQueryDataSourceWithRestrictingQualifier=INFO
+log4j.logger.net.formiguinhas.delegates.CanUpdateDelegate=DEBUG
+
+#################################
+# MIGRATIONS
+#################################
+
+#log4j.logger.net.formiguinhas.migration.ERAttachment0=DEBUG
+#log4j.logger.net.formiguinhas.migration.ModeloGerente0=DEBUG
+log4j.logger.er.extensions.migration.ERXMigrator=INFO
+
+#################################
+# AUDIT
+#################################
+log4j.logger.er.corebusinesslogic.audittrail.ERCAuditTrailHandler=INFO
+log4j.logger.er.corebusinesslogic.ERCoreBusinessLogic=INFO
+log4j.logger.er.corebl.ERCoreBL=INFO
+log4j.logger.er.corebl.audittrail.ERCAuditTrailHandler=INFO
+
+
+#################################
+# QUARTZ
+#################################
+#log4j.logger.com.sun.xml.ws.model.RuntimeModeler=WARN
+log4j.logger.org.quartz.impl.StdSchedulerFactory=WARN
+log4j.logger.org.quartz.simpl=WARN
+log4j.logger.org.quartz.info=INFO
+

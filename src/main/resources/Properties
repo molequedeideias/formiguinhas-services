@@ -1,0 +1,129 @@
+#moleque.WOFrameworksBaseURL = /WebObjects/provon-d2w.woa/Contents/Frameworks
+er.extensions.ERXBrowserFactory.BrowserClassName=net.formiguinhas.app.Browser
+
+er.extensions.ERXProperties.OptionalConfigurationFiles = ("Properties.mail","Properties.app")
+delegates.CanUpdateDelegate.profile_overule_activate=false
+#========================================================================
+# ERXNavigation
+#========================================================================
+
+er.extensions.ERXNavigationManager.localizeDisplayKeys=true
+er.extensions.ERXNavigationManager.includeLabelSpanTag=true
+
+#========================================================================
+# D2W
+#========================================================================
+er.directtoweb.ERD2WModel.additionalModelNames = ("displayNames.d2wmodel","menu.d2wmodel")
+
+
+#========================================================================
+# ERXEntityClassDescription
+#========================================================================
+er.extensions.ERXGenericRecord.useValidity=false
+#========================================================================
+# ERAttachment
+#========================================================================
+
+er.attachment.Resource.foto.tempFolder = /tmp/erattachment
+#er.attachment.Resource.foto.maxSize = 2000000
+er.attachment.Resource.foto.storageType = db
+er.attachment.Resource.foto.file.overwrite = false
+er.attachment.Resource.foto.file.filesystemPath = /tmp/erattachment
+
+er.attachment.tempFolder = /tmp/erattachment
+#er.attachment.maxSize = 2000000
+er.attachment.storageType = db
+er.attachment.file.overwrite = true
+er.attachment.file.filesystemPath = /tmp
+
+# S3 properties
+#er.attachment.s3.accessKeyID / er.attachment.[configurationName].s3.accessKeyID
+#(required) Your Amazon S3 access key ID. This is loaded using ERXProperties.decryptedStringForKey if you would like to encrypt it.
+
+#er.attachment.s3.secretAccessKey / er.attachment.[configurationName].s3.secretAccessKey
+#(required) Your Amazon S3 secret access key. This is loaded using ERXProperties.decryptedStringForKey if you would like to encrypt it.
+
+#er.attachment.s3.bucket / er.attachment.[configurationName].s3.bucket
+#(required) The name of the bucket to store and retrieve attachments into. The bucket must already exist in your S3 account.
+
+#er.attachment.s3.host / er.attachment.[configurationName].s3.host
+#(optional) Defaults to s3.amazonaws.com. Use this property if your bucket is not in the default region. For example put s3-eu-west-1.amazonaws.com for EU(Ireland).
+
+#er.attachment.s3.key / er.attachment.[configurationName].s3.key
+#(optional) The name of the file to store in the S3 bucket. This is evaluated as a path template. The default value is "${pk}${ext}".
+
+#er.attachment.s3.acl / er.attachment.[configurationName].s3.acl
+#(optional) The access control policy for uploaded objects. See http://docs.amazonwebservices.com/AmazonS3/latest/index.html?RESTAccessPolicy.html for more deails. The default value is "public-read".
+
+#er.attachment.s3.linkLife / er.attachment.[configurationName].s3.linkLife
+#(optional) If acl is set to "private" then urls generated for attachments are signed and expire. linkLife specifies the length of time in milliseconds that the generated url is valid. The default value is "60000".
+
+#er.attachment.s3.proxy / er.attachment.[configurationName].s3.proxy
+#(optional) If proxy is true, then the attachment's contents will be served through the request handler proxy. The default is true.
+
+
+#========================================================================
+# Tipos de arquivos para validacao do ERAttachment
+#========================================================================
+com.moleque.certificacao.LoteImportacao.zippedResource.type=("zip")
+com.moleque.certificacao.LoteImportacao.planilha.type=("xls", "xlsx")
+
+#========================================================================
+# Style CSS Path Page LoginD2w
+#========================================================================
+
+app.css.login.path=main.css
+
+#========================================================================
+# ONGL DEBUG
+#========================================================================
+
+#ognl.helperFunctions=true
+#ognl.inlineBindings=true
+
+#################
+Thread-safe pref
+#################
+
+WOAllowsConcurrentRequestHandling=true
+
+er.extensions.ERXEC.safeLocking=true
+#========================================================================
+# TinyMCE Configuration
+#========================================================================
+er.directtoweb.ERDEditHTML.tinyMceSourceFrameworkName = app
+er.directtoweb.ERDEditHTML.tinyMceSourceFileName = tiny_mce3/tiny_mce.js
+
+er.extensions.ERXWOForm.multipleSubmitDefault=true
+#er.extensions.ERXWORepetition.checkHashCodes=true
+#er.extensions.ERXWORepetition.raiseOnUnmatchedObject=true
+er.extensions.ERXWORepetition.eoSupport=true
+
+
+# PROPRIEDADE PARA RODAR JOBS DE LEMBRETES DIARIOS
+moleque.rodaJobsLembretes=false
+
+#########################################################################
+# ERExtensions Framework Configuration
+#########################################################################
+
+### Enterprise Objects ###
+er.extensions.ERXRaiseOnMissingEditingContextDelegate = false
+#er.extensions.ERXCompilerProxyEnabled=true
+#er.extensions.ERXClassDescription.factoryClass =
+
+#########################################################################
+ERd2W - SOBRESCREVER PORQUE DEU PROBLEMA EM PAGINAS DO TIPO WIZARD
+#########################################################################
+
+# XHTML Strict Compliance - COLOVADO O CONTRARIO QUE ESTAVA NA FRAMEOWRK
+er.extensions.ERXWOForm.useIdInsteadOfNameTag=false
+er.extensions.ERXResponseRewriter.javascriptTypeAttribute=false
+
+# Don't use componentIdentifier
+er.extensions.foundation.ERXPatcher.DynamicElementsPatches.appendComponentIdentifier=false
+
+# ERR2D2W
+#er.r2d2w.ERR2d2w.createsDerivedCounts=true
+#er.r2d2w.ERR2d2w.ignoreModels=(ERAttachment,erprototypes)
+

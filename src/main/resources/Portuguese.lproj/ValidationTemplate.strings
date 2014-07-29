@@ -1,0 +1,11 @@
+{
+	"QuestionSemAlternativas"="\u00c9 obrigat\u00f3rio ter pelo menos uma Alternativa.";
+	"QuestionSemAlternativaCorreta"="\u00c9 obrigat\u00f3rio que uma das alternativas esteja correta.";
+	"com.moleque.certificacao.server.gerente.LoteImportacao.sucesso"="Lote Importado com sucesso!";
+	"Validity.EmailInvalido" = "O email digitado n\u00e3o \u00e9 um email v\u00e1lido";
+	"Validity.LoginJaExiste" = "Este login j\u00e1 est\u00e1 sendo usado por outro usu\u00e1rio";
+	"Validity.CPFJaExiste" = "Este CPF j\u00e1 consta da nossa base de dados e est\u00e1 associado a outro usu\u00e1rio.";
+	"Validity.EmailJaExiste" = "Este email j\u00e1 consta da nossa base de dados e est\u00e1 associado a outro usu\u00e1rio.";
+	"ERXValidation.QuestionAlternatives.AlternativaSemImagemETexto" = "Uma alternativa deve ter pelo menos um texto ou uma imagem associadas.";
+	"ERXValidation.UnidadeCurricular.FundamentosECapacidadesNaoPodemSerAmbosNulos"= "Devem ser preenchidos pelo menos os fundamentos te\u00f3ricos ou as capacidades t\u00e9cnicas de uma unidade curricular";
+}

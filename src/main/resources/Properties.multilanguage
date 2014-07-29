@@ -1,0 +1,8 @@
+#========================================================================
+# LOCALIZATION
+#========================================================================
+er.extensions.ERXLocalizer.defaultLanguage=Portuguese
+er.extensions.ERXLocalizer.availableLanguages=(Portuguese,English)
+er.extensions.ERXLocalizer.frameworkSearchPath = (app,"mol-wo-extensions",ERModernLook,ERModernLookDefaultSkin,ERModernDirectToWeb,ERDirectToWeb,ERExtensions,ERR2dw)
+er.extensions.ERXLocalizer.fileNamesToWatch = ("Localizable.strings", "ValidationTemplate.strings", "App.strings","Menu.strings","Buttons.strings","Labels.strings","Plural.strings")
+er.extensions.ERXApplication.DefaultEncoding=UTF-8

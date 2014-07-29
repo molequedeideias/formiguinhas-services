@@ -1,0 +1,23 @@
+#========================================================================
+# DATABASE LOCAL
+#========================================================================
+dbConnectURLGLOBAL=jdbc:mysql://localhost/formiguinhas?useUnicode=true&characterEncoding=utf8
+dbConnectUserGLOBAL=formiguinhas
+dbConnectPasswordGLOBAL= formiguinhas
+
+#========================================================================
+# AMAZON HOMOLOG
+#========================================================================
+#dbConnectURLGLOBAL=jdbc:mysql://webobjects-dev.c7zsfqeim8gh.us-east-1.rds.amazonaws.com/provon-d2w-homolog?useUnicode=true&characterEncoding=utf8
+#dbConnectUserGLOBAL=provon-educamais
+#dbConnectPasswordGLOBAL=pr0v0n-3duc@m@1s
+
+#========================================================================
+# AMAZON PRODUCAO
+#========================================================================
+#dbConnectURLGLOBAL=jdbc:mysql://webobjects-dev.c7zsfqeim8gh.us-east-1.rds.amazonaws.com/provon-d2w?useUnicode=true&characterEncoding=utf8
+#dbConnectUserGLOBAL=provon-educamais
+#dbConnectPasswordGLOBAL=pr0v0n-3duc@m@1s
+
+dbConnectPluginGLOBAL=MySQLPlugIn
+dbConnectDriverGLOBAL=com.mysql.jdbc.Driver

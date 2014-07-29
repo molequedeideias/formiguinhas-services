@@ -1,0 +1,106 @@
+/* This is localization template resource for er.extensions.ERXLocalizer.
+ * ERXLocalizer provids KVC (Key Value Coding) access to localization resources.
+ *
+ * These types of key-value pares are acceptable:
+ *
+ *    "this is a test" = "some test";
+ *    "unittest.key.path.as.string" = "some test";
+ *    "unittest" = {"key" = { "path" = { "as" = {"dict"="some test";};};};};
+ *
+ * Note that if you only call for "unittest", you'll get a dictionary. So you can localize
+ * more complex objects than strings.
+ *
+ * As long as your Session extends ERXSession, you can do the followings in
+ * your components.
+ *
+ * Via Java codes:
+ *   valueForKeyPaty("session.localizer.this is a test");
+ *   valueForKeyPath("session.localizer.unittest.key.path.as.string")
+ *   valueForKeyPath("session.localizer.unittest.key.path.as.dict")
+ *
+ * Via WebObjects Builder:
+ *   "session.localizer.this is a test"
+ *   "session.localizer.unittest.key.path.as.string"
+ *   "session.localizer.unittest.key.path.as.dict"
+ *
+ * For sessionless Apps, you must use another method to get at the requested
+ * language and then call the localizer via
+ *
+ * ERXLocalizer l = ERXLocalizer.localizerForLanguages(languagesThisUserCanHandle) or
+ * ERXLocalizer l = ERXLocalizer.localizerForLanguage("German")
+ */
+
+{
+
+	"header.edit" = "Atualizando";
+	"header.create" = "Criando";
+	"header.list" = "Listagem de";
+	//"header.queryAll" = "Pesquisa geral";
+	"header.queryAll" = "Seja bem-vindo ao Formiguinhas - Compras colaborativas e em rede!";
+	"header.query" = "Pesquisando";
+	"header.select" = "Selecionando";
+	"header.inspect" = "Visualizando";
+
+/*
+ * ENTIDADES
+ */
+
+ 	"Usuario" = "Usu\u00e1rio";
+ 	"ListaDeCompras" = "Lista de compras";
+ 	"Fornecedor" = "Fornecedor";
+ 	"Produto" = "Produto";
+
+//LOCALIZACOES PARA DISPLAYNAMEFORENTITITY necessario para palavras compostas -
+//sao capitalizados e usados em varias mensagens
+
+    "Lista De Compras" = "Lista de compras";
+
+
+//TRADUCOES PARA  AVALIAR SE NECESSARIO
+
+
+// FIM DE TRADUCOES PARA  AVALIAR SE NECESSARIO
+
+	"ERMBatchSizeControl.Show" = "Exibindo ";
+	"ERMBatchSizeControl.item" = "item";
+
+	"ERDTrashcan.confirmDeletionMessage" = "Voc\u00ea tem certeza que deseja excluir o seguinte item @@displayNameForEntity@@?";
+	"ERD2WInspect.alreadyAborted" = "Voc\u00ea j\u00e1 abortou esta opera\u00e7\u00e3o. Por favor clique em Cancelar e tente novamente do primeiro passo.";
+
+	"ERMDEmptyListMessage.emptyListMessage" = "N\u00e3o h\u00e1 @@displayNameForEntity@@ cadastradas.";
+
+	"ERD2WQueryToManyField.where" = " ";
+	"ERD2WQueryToManyField.is" = " ";
+
+	"ERD2WBoolean.Unset" = " -- ";
+	"ERD2WBoolean.Yes" = "Sim";
+	"ERD2WBoolean.No" = "N\u00e3o";
+
+	/* TITULOS DAS PAGINAS - BASEADOS EM TRADUCOES DE displayNameForPageConfiguration */
+	"Search All" = "Pesquisa geral";
+
+	"Query Produto"= "Pesquisando produtos";
+	"Create Produto"= "Criando produto";
+	"Edit Produto"= "Atualizando produto";
+	"Inspect Produto"= "Visualizando produto";
+	"List Produto"= "Listagem de produtos";
+
+	"Query Fornecedor"= "Pesquisando fornecedores";
+	"Create Fornecedor"= "Criando fornecedor";
+	"Edit Fornecedor"= "Atualizando fornecedor";
+	"Inspect Fornecedor"= "Visualizando fornecedor";
+	"List Fornecedor"= "Listagem de fornecedores";
+
+	"Query Lista De Compras"= "Pesquisando listas de compras";
+	"Create Lista De Compras"= "Criando listas de compras";
+	"Edit Lista De Compras"= "Atualizando listas de compras";
+	"Inspect Lista De Compras"= "Visualizando listas de compras";
+	"List Lista De Compras"= "Listagem de listas de compras";
+
+	"Query Usuario"= "Pesquisando usu\u00e1rios";
+	"Create Usuario"= "Criando usu\u00e1rios";
+	"Edit Usuario"= "Atualizando usu\u00e1rios";
+	"Inspect Usuario"= "Visualizando usu\u00e1rios";
+	"List Usuario"= "Listagem de usu\u00e1rios";
+
+}

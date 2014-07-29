@@ -1,0 +1,14 @@
+{
+"LOGIN.UsernameLabel" = "Usu\u00e1rio";
+"LOGIN.PasswordLabel" = "Senha";
+"LOGIN.newPasswordLabel" = "Nova Senha:";
+"LOGIN.newPasswordConfirmLabel" = "Digite novamente a nova Senha:";
+"LOGIN.EsqueceuSenhaLabel"  = "Esqueceu sua senha ?";
+"LOGIN.salvar"  = "Salvar";
+"LOGIN.LoginButtonLabel"="Login";
+"LOGIN.emailUsuarioLabel"="Email do usu\u00e1rio";
+"LOGIN.recuperarSenhaLabel"="Enviar email";
+"LOGIN.MensagemQuadroLogin" = "Login";
+
+
+}

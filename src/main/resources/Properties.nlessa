@@ -1,0 +1,17 @@
+moleque.WOFrameworksBaseURL = /WebObjects/formiguinhas-services.woa/Contents/Frameworks
+com.moleque.certificacao.delegates.CanUpdateDelegate.profile_overule_activate=false
+
+
+#========================================================================
+# DEVELOPMENT MODE
+#========================================================================
+
+D@WWebAssistant Enabled = false
+er.extensions.ERXApplication.developmentMode = true
+
+#========================================================================
+# Click To Open
+#========================================================================
+er.component.clickToOpen=true
+wolips.password=wo
+

@@ -1,0 +1,36 @@
+.TabelaCompetencias {
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: left;
+	color: #D4CEB7;
+	background: #D4CEB7
+}
+
+.TabelaCompetencias th {
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+
+.TabelaCompetencias td {
+	background: #E1DDCD;
+	font-size: 10px;
+	font-family: Verdana;
+	color: black;
+}
+
+.TabelaCompetencias a:visited {
+	color: #000000
+}
+
+.TabelaCompetencias a:hover {
+	color: #000000
+}
+
+.TabelaCompetencias a:active {
+	color: #000000
+}

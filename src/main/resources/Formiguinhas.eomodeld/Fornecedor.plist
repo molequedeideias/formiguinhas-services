@@ -1,0 +1,13 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = nome; name = nome; prototypeName = varchar16; }
+    ); 
+    attributesUsedForLocking = (id, nome); 
+    className = "net.formiguinhas.negocios.Fornecedor"; 
+    classProperties = (nome); 
+    externalName = Fornecedor; 
+    fetchSpecificationDictionary = {}; 
+    name = Fornecedor; 
+    primaryKeyAttributes = (id); 
+}

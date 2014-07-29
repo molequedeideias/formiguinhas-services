@@ -1,0 +1,29 @@
+{
+    LoginSenha = {
+        class = EOFetchSpecification; 
+        entityName = Usuario; 
+        prefetchingRelationshipKeyPaths = (); 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = login; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = login; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = password; 
+                    selectorName = "isEqualTo:"; 
+                    value = {"_key" = password; class = EOQualifierVariable; }; 
+                }
+            ); 
+        }; 
+    }; 
+    login = {
+        class = EOFetchSpecification; 
+        entityName = Usuario; 
+        prefetchingRelationshipKeyPaths = (); 
+    }; 
+}

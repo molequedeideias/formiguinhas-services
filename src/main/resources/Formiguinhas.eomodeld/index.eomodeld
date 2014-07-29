@@ -1,0 +1,23 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {}; 
+    entities = (
+        {className = "net.formiguinhas.negocios.Endereco"; name = Endereco; }, 
+        {className = "net.formiguinhas.negocios.Fornecedor"; name = Fornecedor; }, 
+        {
+            className = "net.formiguinhas.negocios.ListaDeCompras"; 
+            name = ListaDeCompras; 
+        }, 
+        {className = "net.formiguinhas.negocios.Produto"; name = Produto; }, 
+        {className = "net.formiguinhas.negocios.Usuario"; name = Usuario; }
+    ); 
+    userInfo = {
+        "_EntityModeler" = {
+            activeDatabaseConfigName = Default; 
+            databaseConfigs = {
+                Default = {adaptorName = JDBC; prototypeEntityName = EOJDBCMySQLPrototypes; }; 
+            }; 
+        }; 
+    }; 
+}

@@ -1,0 +1,111 @@
+/* Para dar suporte a pluralizacao em portugues< basta acrescentar ã palavra que se quer
+*  pluralizar a key PLURAL e mapear ao nome pluralizado
+* 	plural de Avião
+* 	"AviãoPlural"= "Aviões";
+NECESSARIO O USO DE MolLocalizer 2.4.X
+ */
+
+{
+	"Area ProfissionalPlural" = "\u00c1reas Profissionais";
+	"Question IndexPlural" = "Indexadores de quest\u00e3o";
+	"Regra AprovacaoPlural" = "Regras para aprova\u00e7\u00e3o na certifica\u00e7\u00e3o";
+	"Regra RetentativaPlural" = "Regras para retentativa de avalia\u00e7\u00e3o";
+
+	"itemPlural"= "itens";
+
+	//CORECOES DE FRASES DEVIDO A PLURAL
+	"Listagem de eixo tecnol\u00f3gico"="Listagem de eixos tecnol\u00f3gicos";
+	"Pesquisando \eixo tecnol\u00f3gico" = "Pesquisando eixos tecnol\u00f3gicos";
+
+	"Listagem de \u00e1rea profissional"="Listagem de \u00e1reas profissionais";
+	"Pesquisando u00e1rea profissional" = "Pesquisando \u00e1reas profissionais";
+
+	"Listagem de modalidade profissional"="Listagem de modalidades profissionais";
+	"Pesquisando modalidade profissional" = "Pesquisando modalidades profissionais";
+
+	"Pesquisando t\u00edtulo profissional"= "Pesquisando t\u00edtulos profissionais";
+	"Listagem de t\u00edtulo profissional"= "Listagem de t\u00edtulos profissionais";
+
+	"Pesquisando perfil profissional"= "Pesquisando perfis profissionais";
+	"Listagem de perfil profissional"= "Listagem de perfis profissionais";
+
+
+	"Pesquisando unidade curricular"= "Pesquisando unidades curriculares";
+	"Listagem de unidade curricular"= "Listagem de unidades curriculares";
+
+	"Pesquisando unidade de compet\u00eancia"= "Pesquisando unidades de compet\u00eancia";
+	"Listagem de unidade de compet\u00eancia"= "Listagem de unidades de compet\u00eancia";
+
+	"Pesquisando unidade de compet\u00eancia b\u00e1sica" = "Pesquisando unidades de compet\u00eancia b\u00e1sicas";
+	"Listagem de unidade de compet\u00eancia b\u00e1sica" = "Listagem de unidades de compet\u00eancia b\u00e1sicas";
+
+	"Pesquisando unidade de compet\u00eancia espec\u00edfica" = "Pesquisando unidades de compet\u00eancia espec\u00edficas";
+	"Listagem de unidade de compet\u00eancia espec\u00edfica" = "Listagem de unidades de compet\u00eancia espec\u00edficas";
+
+	"Pesquisando elemento de compet\u00eancia"= "Pesquisando elementos de compet\u00eancia";
+	"Listagem de elemento de compet\u00eancia"= "Listagem de elementos de compet\u00eancia";
+
+	"Pesquisando padr\u00e3o de desempenho"= "Pesquisando padr\u00f5es de desempenho";
+	"Listagem de padr\u00e3o de desempenho"= "Listagem de padr\u00f5es de desempenho";
+
+	"Pesquisando equipamento e ferramenta" = "Pesquisando equipamentos e ferramentas";
+	"Listagem de equipamento e ferramenta"= "Listagem de equipamentos e ferramentas";
+
+	"Pesquisando material de consumo"= "Pesquisando materiais de consumo";
+	"Listagem de material de consumo"= "Listagem de materiais de consumo";
+
+	"Pesquisando certifica\u00e7\u00e3o"= "Pesquisando certifica\u00e7\u00f5es";
+	"Listagem de certifica\u00e7\u00e3o"= "Listagem de certifica\u00e7\u00f5es";
+
+	"Pesquisando regra de certifica\u00e7\u00e3o" = "Pesquisando regras de certifica\u00e7\u00e3o";
+	"Listagem de regra de certifica\u00e7\u00e3o" = "Listagem de regras de certifica\u00e7\u00e3o";
+
+	"Pesquisando modelo de avalia\u00e7\u00e3o"= "Pesquisando modelos de avalia\u00e7\u00e3o";
+	"Listagem de modelo de avalia\u00e7\u00e3o"= "Listagem de modelos de avalia\u00e7\u00e3o";
+	"Listagem de modelo de avalia\u00e7\u00e3o t\u00e9orica"= "Listagem de modelos de avalia\u00e7\u00e3o t\u00e9orica";
+	"Listagem de modelo de avalia\u00e7\u00e3o pr\u00e1tica"= "Listagem de modelos de avalia\u00e7\u00e3o pr\u00e1tica";
+	"Listagem de modelo de avalia\u00e7\u00e3o oral"= "Listagem de modelos de avalia\u00e7\u00e3o oral";
+
+	"Pesquisando corretor associado a modelo de avalia\u00e7\u00e3" = "Pesquisando corretores associados a modelos de avalia\u00e7\u00e3";
+	"Listagem de corretor associado a modelo de avalia\u00e7\u00e3" = "Listagem de corretores associados a modelos de avalia\u00e7\u00e3";
+
+	"Pesquisando quest\u00e3o"= "Pesquisando quest\u00f5es";
+	"Listagem de quest\u00e3o"= "Listagem de quest\u00f5es";
+
+	"Pesquisando lista de verifica\u00e7\u00e3o"= "Pesquisando listas de verifica\u00e7\u00e3o";
+	"Listagem de lista de verifica\u00e7\u00e3o"= "Listagem de listas de verifica\u00e7\u00e3o";
+
+	"Pesquisando item de verifica\u00e7\u00e3o"= "Pesquisando itens de verifica\u00e7\u00e3o";
+	"Listagem de item de verifica\u00e7\u00e3o"= "Listagem de itens de verifica\u00e7\u00e3o";
+
+	"Pesquisando empresa"= "Pesquisando empresas";
+	"Listagem de empresa" = "Listagem de empresas";
+
+	"Pesquisando pessoa"= "Pesquisando pessoas";
+	"Listagem de pessoa"= "Listagem de pessoas";
+
+	"Pesquisando matrícula"= "Pesquisando matrículas";
+	"Listagem de matrícula"= "Listagem de matrículas";
+
+	"Pesquisando agendamento"= "Pesquisando agendamentos";
+	"Listagem de agendamento"= "Listagem de agendamentos";
+
+	"Pesquisando agendamento de avalia\u00e7\u00e3o"= "Pesquisando agendamentos de avalia\u00e7\u00f5es";
+	"Listagem de agendamento de avalia\u00e7\u00e3o"= "Listagem de agendamentos de avalia\u00e7\u00f5es";
+
+	"Pesquisando avalia\u00e7\u00e3o" = "Pesquisando avalia\u00e7\u00f5es";
+	"Listagem de avalia\u00e7\u00e3o" = "Listagem de avalia\u00e7\u00f5es";
+
+	"Pesquisando hor\u00e1rio reservado" = "Pesquisando hor\u00e1rios reservados";
+	"Listagem de hor\u00e1rio reservado" = "Listagem de hor\u00e1rios reservados";
+
+	"Pesquisando hor\u00e1rio reservado para avalia\u00e7\u00e3o" = "Pesquisando hor\u00e1rios reservados para avalia\u00e7\u00f5es";
+	"Listagem de hor\u00e1rio reservado para avalia\u00e7\u00e3o" = "Listagem de hor\u00e1rios reservados para avalia\u00e7\u00f5es";
+
+	"Pesquisando agendamento para avalia\u00e7\u00e3o"= "Pesquisando agendamentos para avalia\u00e7\u00e3o";
+	"Listagem de agendamento para avalia\u00e7\u00e3o"= "Listagem de agendamentos para avalia\u00e7\u00e3o";
+
+	"Pesquisando documento"= "Pesquisando documentos";
+	"Listagem de documento"= "Listagem de documentos";
+
+}

@@ -1,0 +1,306 @@
+{
+  "rules" = (
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "session.navController.subMenu"; 
+        "selectorName" = "isLike"; 
+        "value" = "Minha_Conta"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "MinhaConta"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "pageConfiguration"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "CreateProduto"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Produto.CreateProduto"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "pageConfiguration"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "CreateUsuario"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Usuario.CreateUsuario"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "pageConfiguration"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "CreateUsuario"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Usuario.CreateUsuario"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "session.navController.subMenu"; 
+        "selectorName" = "isLike"; 
+        "value" = "Gestao_Produto"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Produto"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "session.navController.subMenu"; 
+        "selectorName" = "isLike"; 
+        "value" = "Gestao_Usuario"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Usuario"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "session.navController.subMenu"; 
+        "selectorName" = "isLike"; 
+        "value" = "Gestao_Fornecedor"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Fornecedor"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "pageConfiguration"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "CreateFornecedor"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Fornecedor.CreateFornecedor"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "session.navController.subMenu"; 
+        "selectorName" = "isLike"; 
+        "value" = "Gestao_ListaDeCompras"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_ListaDeCompras"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "InspectProduto"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "EditProduto"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "ListProduto"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "QueryProduto"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Produto.SearchProduto"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "InspectUsuario"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "EditUsuario"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "ListUsuario"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "QueryUsuario"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Usuario.SearchUsuario"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "InspectFornecedor"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "EditFornecedor"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "ListFornecedor"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "QueryFornecedor"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_Fornecedor.SearchFornecedor"; 
+      }; 
+    }, 
+    {
+      "author" = "60"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "InspectListaDeCompras"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "EditListaDeCompras"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "ListListaDeCompras"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "QueryListaDeCompras"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "navigationState"; 
+        "value" = "Gestao_ListaDeCompras.SearchListaDeCompras"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "navigationState"; 
+        "selectorName" = "isLike"; 
+        "value" = "Minha_Conta*"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "headerString"; 
+        "value" = "Dados da minha conta"; 
+      }; 
+    }
+  ); 
+}

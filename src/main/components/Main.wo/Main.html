@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name = "generator" content = "WOLips maven2 Plug-in" />
+    <title><webobject name = "TituloSistemaLogin"/></title>
+    <link rel = "stylesheet" href = "<WEBOBJECT NAME=ResourceURL9></WEBOBJECT>" />
+  </head>
+  <body bgcolor = "ffffff" id = "login">
+  	<div class="content-box">
+    <h1 align = "center"><webobject name = "MensagemQuadroLogin"/></h1>
+    <webobject name = "LoginForm">
+      <center>
+        <table border = "2" cellpadding = "4" cellspacing = "2" bgcolor = "#B0B0B0">
+          <tr>
+            <td>
+              <table border = "0" cellpadding = "2" cellspacing = "0" bgcolor = "#B0B0B0">
+                <tr>
+                  &nbsp; &nbsp; &nbsp;
+                  <td>
+                    <p>Login</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th align = "right"> <webobject name = "UsernameLabel"/>: </th>
+                  <td> <webobject name = "UsernameField" /> </td>
+                </tr>
+                <tr>
+                  <th align = "right"> <webobject name = "PasswordLabel"/> </th>
+                  <td> <webobject name = "PasswordField" /> </td>
+                </tr>
+
+                  <tr>
+                    <th align = "center" colspan = "2"><webobject name = "AssistantConditional">Enable Assistant: <webobject name = "LACheckbox" /> </webobject></th>
+                    &nbsp; &nbsp;
+                    <th>
+                      <td>
+                        <a href = ""><em><webobject name = "EsqueceuSenhaLabel"/></em></a>
+                      </td>
+                    </th>
+                  </tr>
+
+                <tr>
+                  <td colspan = "2" align = "center"><webobject name = "LoginButton" /> </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <p />
+
+      </center>
+      <div class="mensagemValidacao"> <webobject name = "mensagemValidacao"/></div>
+    </webobject>
+    </div>
+    <div id = "Footer"><webobject name = "Versao"/></div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+**/*.gif
+**/*.xsl
+**/*.css
+**/*.png
+**/*.jpg
+**/*.js
+**/*.jasper
+src/main/webserver-resources/tiny_mce3
+src/main/webserver-resources/tiny_mce4
+src/main/webserver-resources/js
+src/main/webserver-resources/images
+src/main/webserver-resources/images_custom
