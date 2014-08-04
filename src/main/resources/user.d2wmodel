@@ -264,24 +264,35 @@
         "qualifiers" = (
           {
             "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-            "key" = "task"; 
-            "selectorName" = "isEqualTo"; 
-            "value" = "query"; 
+            "key" = "RuleIsDisabled"; 
+            "selectorName" = "isEqual"; 
+            "value" = "YES"; 
           }, 
           {
-            "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+            "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
             "qualifiers" = (
               {
                 "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-                "key" = "smartAttribute.className"; 
+                "key" = "task"; 
                 "selectorName" = "isEqualTo"; 
-                "value" = "java.math.BigDecimal"; 
+                "value" = "query"; 
               }, 
               {
-                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
-                "key" = "smartAttribute.className"; 
-                "selectorName" = "isEqualTo"; 
-                "value" = "java.lang.Number"; 
+                "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+                "qualifiers" = (
+                  {
+                    "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                    "key" = "smartAttribute.className"; 
+                    "selectorName" = "isEqualTo"; 
+                    "value" = "java.math.BigDecimal"; 
+                  }, 
+                  {
+                    "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                    "key" = "smartAttribute.className"; 
+                    "selectorName" = "isEqualTo"; 
+                    "value" = "java.lang.Number"; 
+                  }
+                ); 
               }
             ); 
           }
@@ -341,15 +352,6 @@
         "value" = (
           "\U00c9"
         ); 
-      }; 
-    }, 
-    {
-      "author" = "100"; 
-      "class" = "com.webobjects.directtoweb.Rule"; 
-      "rhs" = {
-        "class" = "com.webobjects.directtoweb.Assignment"; 
-        "keyPath" = "appName"; 
-        "value" = "ProvonD2W"; 
       }; 
     }, 
     {
@@ -431,6 +433,15 @@
         "class" = "com.webobjects.directtoweb.Assignment"; 
         "keyPath" = "noSelectionString"; 
         "value" = " -- Selecione -- "; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "appName"; 
+        "value" = "Formiguinhas - Compras em Rede"; 
       }; 
     }, 
     {

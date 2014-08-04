@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = fornecedorId; 
+            name = fornecedorId; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = usuarioId; 
+            name = usuarioId; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (fornecedorId, usuarioId); 
+    className = EOGenericRecord; 
+    externalName = FornecedorXUsuario; 
+    fetchSpecificationDictionary = {}; 
+    name = FornecedorXUsuario; 
+    primaryKeyAttributes = (fornecedorId, usuarioId); 
+    relationships = (
+        {
+            destination = Fornecedor; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = fornecedorId; }); 
+            name = fornecedor; 
+        }, 
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = usuarioId; }); 
+            name = usuario; 
+        }
+    ); 
+}

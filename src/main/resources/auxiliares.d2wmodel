@@ -1,0 +1,112 @@
+{
+  "rules" = (
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateFone"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateEmbeddedFone"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "subTask"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateEndereco"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateEmbeddedEndereco"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "subTask"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateEndereco"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateEmbeddedEndereco"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "displayPropertyKeys"; 
+        "value" = (
+          "nome"
+        ); 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateFone"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "CreateEmbeddedFone"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "displayPropertyKeys"; 
+        "value" = (
+          "tipo", 
+          "ddd", 
+          "numero"
+        ); 
+      }; 
+    }
+  ); 
+}

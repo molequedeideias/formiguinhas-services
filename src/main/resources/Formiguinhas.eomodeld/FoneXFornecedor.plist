@@ -1,0 +1,35 @@
+{
+    attributes = (
+        {allowsNull = N; columnName = foneId; name = foneId; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = fornecedorId; 
+            name = fornecedorId; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (foneId, fornecedorId); 
+    className = EOGenericRecord; 
+    externalName = FoneXFornecedor; 
+    fetchSpecificationDictionary = {}; 
+    name = FoneXFornecedor; 
+    primaryKeyAttributes = (foneId, fornecedorId); 
+    relationships = (
+        {
+            destination = Fone; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = foneId; }); 
+            name = fone; 
+        }, 
+        {
+            destination = Fornecedor; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = fornecedorId; }); 
+            name = fornecedor; 
+        }
+    ); 
+}

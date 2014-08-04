@@ -1,0 +1,77 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = usuarioID; 
+            name = usuarioID; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (id, usuarioID); 
+    className = "net.formiguinhas.negocios.ListaDeComprasDeUsuario"; 
+    classProperties = (entregas, pagamentos, produtosEmListas, transferenciasDePagamentos, usuario); 
+    externalName = ListaDeComprasDeUsuario; 
+    fetchSpecificationDictionary = {}; 
+    name = ListaDeComprasDeUsuario; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {definition = "entregaXListaDeComprasDeUsuarios.entrega"; name = entregas; }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = EntregaXListaDeComprasDeUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = listaDeComprasDeUsuarioId; sourceAttribute = id; }); 
+            name = entregaXListaDeComprasDeUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ListaDeComprasDeUsuarioXPagamento; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = listaDeComprasDeUsuarioId; sourceAttribute = id; }); 
+            name = listaDeComprasDeUsuarioXPagamentos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ListaDeComprasDeUsuarioXProdutoEmLista; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = listaDeComprasDeUsuarioId; sourceAttribute = id; }); 
+            name = listaDeComprasDeUsuarioXProdutoEmListas; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ListaDeComprasDeUsuarioXTransferenciaDePagamento; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = listaDeComprasDeUsuarioId; sourceAttribute = id; }); 
+            name = listaDeComprasDeUsuarioXTransferenciaDePagamentos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = "listaDeComprasDeUsuarioXPagamentos.pagamento"; 
+            name = pagamentos; 
+        }, 
+        {
+            definition = "listaDeComprasDeUsuarioXProdutoEmListas.produtoEmLista"; 
+            name = produtosEmListas; 
+        }, 
+        {
+            definition = "listaDeComprasDeUsuarioXTransferenciaDePagamentos.transferenciaDePagamento"; 
+            name = transferenciasDePagamentos; 
+        }, 
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = usuarioID; }); 
+            name = usuario; 
+        }
+    ); 
+}

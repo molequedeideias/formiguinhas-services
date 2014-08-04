@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = enderecoId; 
+            name = enderecoId; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = usuarioId; 
+            name = usuarioId; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (enderecoId, usuarioId); 
+    className = EOGenericRecord; 
+    externalName = EnderecoXUsuario; 
+    fetchSpecificationDictionary = {}; 
+    name = EnderecoXUsuario; 
+    primaryKeyAttributes = (enderecoId, usuarioId); 
+    relationships = (
+        {
+            destination = Endereco; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = enderecoId; }); 
+            name = endereco; 
+        }, 
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = usuarioId; }); 
+            name = usuario; 
+        }
+    ); 
+}

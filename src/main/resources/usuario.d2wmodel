@@ -1,0 +1,108 @@
+{
+  "rules" = (
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "EditUsuario"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "InspectUsuario"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "subTask"; 
+        "value" = "tab"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "entity.name"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "Usuario"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "subTask"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "wizard"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "tabSectionsContents"; 
+        "value" = (
+          "[Dados b\U00e1sicos]", 
+          "nome", 
+          "cpf", 
+          "email", 
+          "login", 
+          "password", 
+          "[Endere\U00e7os,contatos]", 
+          "enderecos", 
+          "fones", 
+          "[Dados para pagamentos]", 
+          "dadosBancarios"
+        ); 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "entity.name"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "Usuario"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "subTask"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "tab"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "tabSectionsContents"; 
+        "value" = (
+          "[Dados b\U00e1sicos]", 
+          "nome", 
+          "cpf", 
+          "email", 
+          "login", 
+          "password", 
+          "[Endere\U00e7os,contatos]", 
+          "enderecos", 
+          "fones", 
+          "[Dados para pagamentos]", 
+          "dadosBancarios", 
+          "[Listas de compras que organizou]", 
+          "[Hist\U00f3rico de compras]"
+        ); 
+      }; 
+    }
+  ); 
+}

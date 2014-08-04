@@ -1,0 +1,190 @@
+{
+  "rules" = (
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "pageConfiguration"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "CreateEmbeddedFornecedor"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "subTask"; 
+        "value" = ""; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+        "key" = "pageConfiguration"; 
+        "selectorName" = "isEqualTo"; 
+        "value" = "CreateEmbeddedFornecedor"; 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "displayPropertyKeys"; 
+        "value" = (
+          "nome", 
+          "cnpj"
+        ); 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOOrQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "EditFornecedor"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "pageConfiguration"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "InspectFornecedor"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "subTask"; 
+        "value" = "tab"; 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "entity.name"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "Fornecedor"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "subTask"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "wizard"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "tabSectionsContents"; 
+        "value" = (
+          "[Dados b\U00e1sicos]", 
+          "nome", 
+          "cnpj", 
+          "inscricaoEstadual", 
+          "[Endere\U00e7os,contatos]", 
+          "enderecos", 
+          "fones", 
+          "[Produtos]", 
+          "produtos"
+        ); 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "entity.name"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "Fornecedor"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "subTask"; 
+            "selectorName" = "isEqualTo"; 
+            "value" = "tab"; 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "tabSectionsContents"; 
+        "value" = (
+          "[Dados b\U00e1sicos]", 
+          "nome", 
+          "cnpj", 
+          "inscricaoEstadual", 
+          "[Endere\U00e7os,contatos]", 
+          "enderecos", 
+          "fones", 
+          "[Produtos]", 
+          "produtos", 
+          "[Listas de compras]", 
+          "listasDeCompras", 
+          "[Usu\U00e1rios administradores]", 
+          "usuariosAdministradores"
+        ); 
+      }; 
+    }, 
+    {
+      "author" = "100"; 
+      "class" = "com.webobjects.directtoweb.Rule"; 
+      "lhs" = {
+        "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+        "qualifiers" = (
+          {
+            "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+            "key" = "RuleIsDisabled"; 
+            "selectorName" = "isEqual"; 
+            "value" = "YES"; 
+          }, 
+          {
+            "class" = "com.webobjects.eocontrol.EOAndQualifier"; 
+            "qualifiers" = (
+              {
+                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                "key" = "entity.name"; 
+                "selectorName" = "isEqualTo"; 
+                "value" = "Fornecedor"; 
+              }, 
+              {
+                "class" = "com.webobjects.eocontrol.EOKeyValueQualifier"; 
+                "key" = "task"; 
+                "selectorName" = "isEqualTo"; 
+                "value" = "inspect"; 
+              }
+            ); 
+          }
+        ); 
+      }; 
+      "rhs" = {
+        "class" = "com.webobjects.directtoweb.Assignment"; 
+        "keyPath" = "tabSectionsContents"; 
+        "value" = (
+          "[Dados b\U00e1sicos]", 
+          "nome", 
+          "cnpj", 
+          "inscricaoEstadual", 
+          "[Endere\U00e7os,contatos]", 
+          "enderecos", 
+          "fones", 
+          "[Produtos]", 
+          "produtos", 
+          "[Listas de compras]", 
+          "listasDeCompras", 
+          "[Usu\U00e1rios administradores]", 
+          "usuariosAdministradores"
+        ); 
+      }; 
+    }
+  ); 
+}

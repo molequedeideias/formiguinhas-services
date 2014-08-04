@@ -1,0 +1,61 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = listaDeComprasId; 
+            name = listaDeComprasId; 
+            prototypeName = id; 
+        }, 
+        {columnName = preco; name = preco; prototypeName = currencyAmount; }, 
+        {
+            allowsNull = N; 
+            columnName = produtoId; 
+            name = produtoId; 
+            prototypeName = id; 
+        }, 
+        {
+            columnName = quantidadeEmQueEhVendido; 
+            name = quantidadeEmQueEhVendido; 
+            prototypeName = amount; 
+        }
+    ); 
+    attributesUsedForLocking = (id, listaDeComprasId, preco, produtoId, quantidadeEmQueEhVendido); 
+    className = "net.formiguinhas.net.ProdutoEmLista"; 
+    classProperties = (listaDeComprasDeUsuarios, preco, quantidadeEmQueEhVendido); 
+    externalName = ProdutoEmLista; 
+    fetchSpecificationDictionary = {}; 
+    name = ProdutoEmLista; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = ListaDeCompras; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = listaDeComprasId; }); 
+            name = listaDeCompras; 
+        }, 
+        {
+            definition = "listaDeComprasDeUsuarioXProdutoEmListas.listaDeComprasDeUsuario"; 
+            name = listaDeComprasDeUsuarios; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ListaDeComprasDeUsuarioXProdutoEmLista; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = produtoEmListaId; sourceAttribute = id; }); 
+            name = listaDeComprasDeUsuarioXProdutoEmListas; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            destination = Produto; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = produtoId; }); 
+            name = produto; 
+        }
+    ); 
+}

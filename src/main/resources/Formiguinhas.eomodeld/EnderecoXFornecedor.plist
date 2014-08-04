@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = enderecoId; 
+            name = enderecoId; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = fornecedorId; 
+            name = fornecedorId; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (enderecoId, fornecedorId); 
+    className = EOGenericRecord; 
+    externalName = EnderecoXFornecedor; 
+    fetchSpecificationDictionary = {}; 
+    name = EnderecoXFornecedor; 
+    primaryKeyAttributes = (enderecoId, fornecedorId); 
+    relationships = (
+        {
+            destination = Endereco; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = enderecoId; }); 
+            name = endereco; 
+        }, 
+        {
+            destination = Fornecedor; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = fornecedorId; }); 
+            name = fornecedor; 
+        }
+    ); 
+}

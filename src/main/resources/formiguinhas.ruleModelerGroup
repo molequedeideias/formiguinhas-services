@@ -8,6 +8,16 @@
 		<string>d2w.d2wmodel</string>
 		<string>menu.d2wmodel</string>
 		<string>displayNames.d2wmodel</string>
+		<string>usuario.d2wmodel</string>
+		<string>listadecompras.d2wmodel</string>
+		<string>produto.d2wmodel</string>
+		<string>fornecedor.d2wmodel</string>
+		<string>../../../../ponder/ERR2d2w/Resources/d2w.d2wmodel</string>
+		<string>../../../../wonder/Frameworks/D2W/ERModernLook/Resources/d2w.d2wmodel</string>
+		<string>../../../../wonder/Frameworks/Core/ERDirectToWeb/Resources/d2w.d2wmodel</string>
+		<string>../../../../wonder/Frameworks/D2W/ERMootoolsDirectToWeb/Resources/d2w.d2wmodel</string>
+		<string>../../../../wonder/Frameworks/D2W/ERModernDirectToWeb/Resources/d2w.d2wmodel</string>
+		<string>../../../../wonder/Frameworks/D2W/ERModernDefaultSkin/Resources/d2w.d2wmodel</string>
 	</array>
 </dict>
 </plist>

@@ -1,13 +1,83 @@
 {
     attributes = (
+        {
+            allowsNull = Y; 
+            columnName = cnpj; 
+            name = cnpj; 
+            prototypeName = varchar10; 
+            width = 12; 
+        }, 
         {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = Y; 
+            columnName = inscricaoEstadual; 
+            name = inscricaoEstadual; 
+            prototypeName = varchar10; 
+            width = 9; 
+        }, 
         {columnName = nome; name = nome; prototypeName = varchar16; }
     ); 
-    attributesUsedForLocking = (id, nome); 
+    attributesUsedForLocking = (id); 
     className = "net.formiguinhas.negocios.Fornecedor"; 
-    classProperties = (nome); 
+    classProperties = (
+        cnpj, 
+        enderecos, 
+        fones, 
+        inscricaoEstadual, 
+        listasDeCompras, 
+        nome, 
+        produtos, 
+        usuariosAdministradores
+    ); 
     externalName = Fornecedor; 
     fetchSpecificationDictionary = {}; 
     name = Fornecedor; 
     primaryKeyAttributes = (id); 
+    relationships = (
+        {definition = "enderecoXFornecedors.endereco"; name = enderecos; }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = EnderecoXFornecedor; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = fornecedorId; sourceAttribute = id; }); 
+            name = enderecoXFornecedors; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {definition = "foneXFornecedors.fone"; name = fones; }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = FoneXFornecedor; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = fornecedorId; sourceAttribute = id; }); 
+            name = foneXFornecedors; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = FornecedorXUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = fornecedorId; sourceAttribute = id; }); 
+            name = fornecedorXUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            destination = ListaDeCompras; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = fornecedorID; sourceAttribute = id; }); 
+            name = listasDeCompras; 
+        }, 
+        {
+            deleteRule = EODeleteRuleDeny; 
+            destination = Produto; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = fornecedorID; sourceAttribute = id; }); 
+            name = produtos; 
+        }, 
+        {definition = "fornecedorXUsuarios.usuario"; name = usuariosAdministradores; }
+    ); 
 }

@@ -3,13 +3,43 @@
     adaptorName = JDBC; 
     connectionDictionary = {}; 
     entities = (
+        {
+            className = "net.formiguinhas.negocios.AcordoEntrePares"; 
+            name = AcordoEntrePares; 
+        }, 
+        {className = "net.formiguinhas.netDadosBancarios"; name = DadosBancarios; }, 
         {className = "net.formiguinhas.negocios.Endereco"; name = Endereco; }, 
+        {className = EOGenericRecord; name = EnderecoXFornecedor; }, 
+        {className = EOGenericRecord; name = EnderecoXUsuario; }, 
+        {className = "net.formiguinhas.Entrega"; name = Entrega; }, 
+        {className = EOGenericRecord; name = EntregaXListaDeComprasDeUsuario; }, 
+        {className = "net.formiguinhas.negocios.Fone"; name = Fone; }, 
+        {className = EOGenericRecord; name = FoneXFornecedor; }, 
+        {className = EOGenericRecord; name = FoneXUsuario; }, 
         {className = "net.formiguinhas.negocios.Fornecedor"; name = Fornecedor; }, 
+        {className = EOGenericRecord; name = FornecedorXUsuario; }, 
         {
             className = "net.formiguinhas.negocios.ListaDeCompras"; 
             name = ListaDeCompras; 
         }, 
+        {
+            className = "net.formiguinhas.negocios.ListaDeComprasDeUsuario"; 
+            name = ListaDeComprasDeUsuario; 
+        }, 
+        {className = EOGenericRecord; name = ListaDeComprasDeUsuarioXPagamento; }, 
+        {className = EOGenericRecord; name = ListaDeComprasDeUsuarioXProdutoEmLista; }, 
+        {
+            className = EOGenericRecord; 
+            name = ListaDeComprasDeUsuarioXTransferenciaDePagamento; 
+        }, 
+        {className = "net.formiguinhas.net.Pagamento"; name = Pagamento; }, 
+        {className = EOGenericRecord; name = PagamentoXTransferenciaDePagamento; }, 
         {className = "net.formiguinhas.negocios.Produto"; name = Produto; }, 
+        {className = "net.formiguinhas.net.ProdutoEmLista"; name = ProdutoEmLista; }, 
+        {
+            className = "net.formiguinhas.TransferenciaDePagamento"; 
+            name = TransferenciaDePagamento; 
+        }, 
         {className = "net.formiguinhas.negocios.Usuario"; name = Usuario; }
     ); 
     userInfo = {

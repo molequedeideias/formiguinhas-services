@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = listaDeComprasDeUsuarioId; 
+            name = listaDeComprasDeUsuarioId; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = pagamentoId; 
+            name = pagamentoId; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (listaDeComprasDeUsuarioId, pagamentoId); 
+    className = EOGenericRecord; 
+    externalName = ListaDeComprasDeUsuarioXPagamento; 
+    fetchSpecificationDictionary = {}; 
+    name = ListaDeComprasDeUsuarioXPagamento; 
+    primaryKeyAttributes = (listaDeComprasDeUsuarioId, pagamentoId); 
+    relationships = (
+        {
+            destination = ListaDeComprasDeUsuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = listaDeComprasDeUsuarioId; }); 
+            name = listaDeComprasDeUsuario; 
+        }, 
+        {
+            destination = Pagamento; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = pagamentoId; }); 
+            name = pagamento; 
+        }
+    ); 
+}

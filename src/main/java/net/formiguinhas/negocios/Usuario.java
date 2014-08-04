@@ -21,6 +21,7 @@ public class Usuario extends _Usuario {
 		public void setProfile(Profile profile) {
 			this.profile = profile;
 		}
+	
 
 
 }

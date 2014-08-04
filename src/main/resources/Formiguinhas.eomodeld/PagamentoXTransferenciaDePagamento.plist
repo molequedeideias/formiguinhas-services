@@ -1,0 +1,40 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = pagamentoId; 
+            name = pagamentoId; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = transferenciaDePagamentoId; 
+            name = transferenciaDePagamentoId; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (pagamentoId, transferenciaDePagamentoId); 
+    className = EOGenericRecord; 
+    externalName = PagamentoXTransferenciaDePagamento; 
+    fetchSpecificationDictionary = {}; 
+    name = PagamentoXTransferenciaDePagamento; 
+    primaryKeyAttributes = (pagamentoId, transferenciaDePagamentoId); 
+    relationships = (
+        {
+            destination = Pagamento; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = pagamentoId; }); 
+            name = pagamento; 
+        }, 
+        {
+            destination = TransferenciaDePagamento; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = transferenciaDePagamentoId; }); 
+            name = transferenciaDePagamento; 
+        }
+    ); 
+}

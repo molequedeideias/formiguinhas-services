@@ -13,7 +13,7 @@ er.extensions.ERXNavigationManager.includeLabelSpanTag=true
 #========================================================================
 # D2W
 #========================================================================
-er.directtoweb.ERD2WModel.additionalModelNames = ("displayNames.d2wmodel","menu.d2wmodel")
+er.directtoweb.ERD2WModel.additionalModelNames = ("displayNames.d2wmodel","menu.d2wmodel","fornecedor.d2wmodel","produto.d2wmodel","listadecompras.d2wmodel","usuario.d2wmodel","auxiliares.d2wmodel")
 
 
 #========================================================================

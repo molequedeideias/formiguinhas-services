@@ -1,0 +1,50 @@
+{
+    attributes = (
+        {allowsNull = N; columnName = acordoID; name = acordoID; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = enderecoID; 
+            name = enderecoID; 
+            prototypeName = id; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }
+    ); 
+    attributesUsedForLocking = (acordoID, enderecoID, id); 
+    className = "net.formiguinhas.Entrega"; 
+    classProperties = (acordo, endereco, listasDeComprasDeUsuarios); 
+    externalName = Entrega; 
+    fetchSpecificationDictionary = {}; 
+    name = Entrega; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = AcordoEntrePares; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = acordoID; }); 
+            name = acordo; 
+        }, 
+        {
+            destination = Endereco; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = enderecoID; }); 
+            name = endereco; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = EntregaXListaDeComprasDeUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = entregaId; sourceAttribute = id; }); 
+            name = entregaXListaDeComprasDeUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = "entregaXListaDeComprasDeUsuarios.listaDeComprasDeUsuario"; 
+            name = listasDeComprasDeUsuarios; 
+        }
+    ); 
+}

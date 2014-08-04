@@ -46,7 +46,7 @@
 	},
 	{
 		name = "SearchProduto";
-		action = "session.navController.searchProdutoAction";
+		action = "session.navController.queryProdutoAction";
 	},
 	{
 		name = "CreateProduto";
@@ -54,7 +54,7 @@
 	},
 	{
 		name = "SearchFornecedor";
-		action = "session.navController.searchFornecedorAction";
+		action = "session.navController.queryFornecedorAction";
 	},
 	{
 		name = "CreateFornecedor";

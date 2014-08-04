@@ -1,0 +1,49 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = aceitanteID; 
+            name = aceitanteID; 
+            prototypeName = id; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = proponenteID; 
+            name = proponenteID; 
+            prototypeName = id; 
+        }, 
+        {
+            adaptorValueConversionMethodName = toString; 
+            columnName = status; 
+            name = status; 
+            prototypeName = javaEnum; 
+            valueClassName = "net.formiguinhas.enums.AcordoStatus"; 
+        }
+    ); 
+    attributesUsedForLocking = (aceitanteID, id, proponenteID, status); 
+    className = "net.formiguinhas.negocios.AcordoEntrePares"; 
+    classProperties = (aceitante, proponente, status); 
+    externalName = AcordoEntrePares; 
+    fetchSpecificationDictionary = {}; 
+    name = AcordoEntrePares; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = aceitanteID; }); 
+            name = aceitante; 
+        }, 
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = proponenteID; }); 
+            name = proponente; 
+        }
+    ); 
+}

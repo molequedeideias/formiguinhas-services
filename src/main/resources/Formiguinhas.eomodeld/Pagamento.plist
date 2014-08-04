@@ -1,0 +1,50 @@
+{
+    attributes = (
+        {allowsNull = N; columnName = acordoID; name = acordoID; prototypeName = id; }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = valor; name = valor; prototypeName = currencyAmount; }
+    ); 
+    attributesUsedForLocking = (acordoID, id, valor); 
+    className = "net.formiguinhas.net.Pagamento"; 
+    classProperties = (acordo, listaDeComprasDeUsuarios, transferenciaDePagamentos, valor); 
+    externalName = Pagamento; 
+    fetchSpecificationDictionary = {}; 
+    name = Pagamento; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = AcordoEntrePares; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = acordoID; }); 
+            name = acordo; 
+        }, 
+        {
+            definition = "listaDeComprasDeUsuarioXPagamentos.listaDeComprasDeUsuario"; 
+            name = listaDeComprasDeUsuarios; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ListaDeComprasDeUsuarioXPagamento; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = pagamentoId; sourceAttribute = id; }); 
+            name = listaDeComprasDeUsuarioXPagamentos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = PagamentoXTransferenciaDePagamento; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = pagamentoId; sourceAttribute = id; }); 
+            name = pagamentoXTransferenciaDePagamentos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = "pagamentoXTransferenciaDePagamentos.transferenciaDePagamento"; 
+            name = transferenciaDePagamentos; 
+        }
+    ); 
+}

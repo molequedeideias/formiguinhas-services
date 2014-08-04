@@ -1,9 +1,61 @@
 {
-    attributes = ({allowsNull = N; name = id; prototypeName = id; }); 
-    attributesUsedForLocking = (id); 
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = fornecedorID; 
+            name = fornecedorID; 
+            prototypeName = id; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = nome; name = nome; prototypeName = varchar100; }, 
+        {
+            allowsNull = Y; 
+            columnName = preco; 
+            name = preco; 
+            prototypeName = currencyAmount; 
+        }, 
+        {
+            columnName = quantidadeEmQueEhVendido; 
+            name = quantidadeEmQueEhVendido; 
+            prototypeName = amount; 
+        }, 
+        {
+            adaptorValueConversionMethodName = toString; 
+            allowsNull = Y; 
+            columnName = unidade; 
+            name = unidade; 
+            prototypeName = javaEnum; 
+            valueClassName = "net.formiguinhas.enums.ProdutoUnidade"; 
+        }
+    ); 
+    attributesUsedForLocking = (fornecedorID, id, preco, quantidadeEmQueEhVendido); 
     className = "net.formiguinhas.negocios.Produto"; 
+    classProperties = (fornecedor, listasDeCompras, nome, preco, quantidadeEmQueEhVendido, unidade); 
     externalName = Produto; 
     fetchSpecificationDictionary = {}; 
     name = Produto; 
     primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Fornecedor; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = fornecedorID; }); 
+            name = fornecedor; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ProdutoEmLista; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = produtoId; sourceAttribute = id; }); 
+            name = listaDeComprasXProdutos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = "listaDeComprasXProdutos.listaDeCompras"; 
+            name = listasDeCompras; 
+        }
+    ); 
 }

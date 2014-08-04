@@ -1,9 +1,97 @@
 {
-    attributes = ({allowsNull = N; name = id; prototypeName = id; }); 
-    attributesUsedForLocking = (id); 
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = dataLimiteParaPedidos; 
+            name = dataLimiteParaPedidos; 
+            prototypeName = jodaLocalDateTime; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = fornecedorID; 
+            name = fornecedorID; 
+            prototypeName = id; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = nome; name = nome; prototypeName = varchar100; }, 
+        {
+            allowsNull = N; 
+            columnName = organizadorID; 
+            name = organizadorID; 
+            prototypeName = id; 
+        }, 
+        {
+            adaptorValueConversionMethodName = toString; 
+            columnName = status; 
+            name = status; 
+            prototypeName = javaEnum; 
+            valueClassName = "net.formiguinhas.enums.ListaDeComprasStatus"; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = valorMaximo; 
+            name = valorMaximo; 
+            prototypeName = currencyAmount; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = valorMinimo; 
+            name = valorMinimo; 
+            prototypeName = currencyAmount; 
+        }
+    ); 
+    attributesUsedForLocking = (
+        dataLimiteParaPedidos, 
+        fornecedorID, 
+        id, 
+        nome, 
+        organizadorID, 
+        status, 
+        valorMaximo, 
+        valorMinimo
+    ); 
     className = "net.formiguinhas.negocios.ListaDeCompras"; 
+    classProperties = (
+        dataLimiteParaPedidos, 
+        fornecedor, 
+        nome, 
+        organizador, 
+        produtos, 
+        status, 
+        valorMaximo, 
+        valorMinimo
+    ); 
     externalName = ListaDeCompras; 
     fetchSpecificationDictionary = {}; 
     name = ListaDeCompras; 
     primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Fornecedor; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = fornecedorID; }); 
+            name = fornecedor; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ProdutoEmLista; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = listaDeComprasId; sourceAttribute = id; }); 
+            name = listaDeComprasXProdutos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = organizadorID; }); 
+            name = organizador; 
+        }, 
+        {definition = "listaDeComprasXProdutos.produto"; name = produtos; }
+    ); 
+    userInfo = {ERXDefaultValues = {status = ATIVA; }; }; 
 }

@@ -1,0 +1,55 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = acordoEntreParesID; 
+            name = acordoEntreParesID; 
+            prototypeName = id; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }
+    ); 
+    attributesUsedForLocking = (acordoEntreParesID, id); 
+    className = "net.formiguinhas.TransferenciaDePagamento"; 
+    classProperties = (acordoEntrePares, listaDeComprasDeUsuarios, pagamentos); 
+    externalName = TransferenciaDePagamento; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_javaClientClassName" = TransferenciaDePagamento; }; 
+    name = TransferenciaDePagamento; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = AcordoEntrePares; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = acordoEntreParesID; }); 
+            name = acordoEntrePares; 
+        }, 
+        {
+            definition = "listaDeComprasDeUsuarioXTransferenciaDePagamentos.listaDeComprasDeUsuario"; 
+            name = listaDeComprasDeUsuarios; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ListaDeComprasDeUsuarioXTransferenciaDePagamento; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = transferenciaDePagamentoId; sourceAttribute = id; }); 
+            name = listaDeComprasDeUsuarioXTransferenciaDePagamentos; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = "pagamentoXTransferenciaDePagamentos.pagamento"; 
+            name = pagamentos; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = PagamentoXTransferenciaDePagamento; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = transferenciaDePagamentoId; sourceAttribute = id; }); 
+            name = pagamentoXTransferenciaDePagamentos; 
+            propagatesPrimaryKey = Y; 
+        }
+    ); 
+}

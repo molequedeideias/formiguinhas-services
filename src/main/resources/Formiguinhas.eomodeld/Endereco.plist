@@ -3,11 +3,40 @@
         {allowsNull = N; name = id; prototypeName = id; }, 
         {columnName = nome; name = nome; prototypeName = varchar16; }
     ); 
-    attributesUsedForLocking = (id, nome); 
+    attributesUsedForLocking = (id); 
     className = "net.formiguinhas.negocios.Endereco"; 
-    classProperties = (nome); 
+    classProperties = (entregas, fornecedores, nome, usuarios); 
     externalName = Endereco; 
     fetchSpecificationDictionary = {}; 
     name = Endereco; 
     primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = EnderecoXFornecedor; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = enderecoId; sourceAttribute = id; }); 
+            name = enderecoXFornecedors; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = EnderecoXUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = enderecoId; sourceAttribute = id; }); 
+            name = enderecoXUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            destination = Entrega; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = enderecoID; sourceAttribute = id; }); 
+            name = entregas; 
+        }, 
+        {definition = "enderecoXFornecedors.fornecedor"; name = fornecedores; }, 
+        {definition = "enderecoXUsuarios.usuario"; name = usuarios; }
+    ); 
 }

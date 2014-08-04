@@ -1,15 +1,103 @@
 {
     attributes = (
+        {
+            allowsNull = Y; 
+            columnName = cpf; 
+            name = cpf; 
+            prototypeName = varchar16; 
+            width = 11; 
+        }, 
         {columnName = email; name = email; prototypeName = varchar50; }, 
         {allowsNull = N; name = id; prototypeName = id; }, 
         {columnName = login; name = login; prototypeName = varchar16; }, 
         {columnName = nome; name = nome; prototypeName = varchar50; }, 
         {columnName = password; name = password; prototypeName = varchar16; }
     ); 
-    attributesUsedForLocking = (email, id, login, nome, password); 
+    attributesUsedForLocking = (cpf, email, id, login, nome, password); 
     className = "net.formiguinhas.negocios.Usuario"; 
-    classProperties = (email, login, nome, password); 
+    classProperties = (
+        acordosPropostosParaMim, 
+        acordosPropostosPeloUsuario, 
+        cpf, 
+        dadosBancarios, 
+        email, 
+        enderecos, 
+        fones, 
+        fornecedores, 
+        listasDeComprasDeUsuario, 
+        listasDeComprasOrganizadas, 
+        login, 
+        nome, 
+        password
+    ); 
     externalName = Usuario; 
     name = Usuario; 
     primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = AcordoEntrePares; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = aceitanteID; sourceAttribute = id; }); 
+            name = acordosPropostosParaMim; 
+        }, 
+        {
+            destination = AcordoEntrePares; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = proponenteID; sourceAttribute = id; }); 
+            name = acordosPropostosPeloUsuario; 
+        }, 
+        {
+            destination = DadosBancarios; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = usuarioID; sourceAttribute = id; }); 
+            name = dadosBancarios; 
+        }, 
+        {definition = "enderecoXUsuarios.endereco"; name = enderecos; }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = EnderecoXUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = usuarioId; sourceAttribute = id; }); 
+            name = enderecoXUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {definition = "foneXUsuarios.fone"; name = fones; }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = FoneXUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = usuarioId; sourceAttribute = id; }); 
+            name = foneXUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {definition = "fornecedorXUsuarios.fornecedor"; name = fornecedores; }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = FornecedorXUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = usuarioId; sourceAttribute = id; }); 
+            name = fornecedorXUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            destination = ListaDeComprasDeUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = usuarioID; sourceAttribute = id; }); 
+            name = listasDeComprasDeUsuario; 
+        }, 
+        {
+            destination = ListaDeCompras; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = organizadorID; sourceAttribute = id; }); 
+            name = listasDeComprasOrganizadas; 
+        }
+    ); 
 }

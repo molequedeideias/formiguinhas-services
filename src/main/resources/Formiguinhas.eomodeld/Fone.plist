@@ -1,0 +1,33 @@
+{
+    attributes = (
+        {columnName = ddd; name = ddd; prototypeName = intNumber; }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = numero; name = numero; prototypeName = varchar10; width = 9; }, 
+        {
+            adaptorValueConversionMethodName = toString; 
+            columnName = tipo; 
+            name = tipo; 
+            prototypeName = javaEnum; 
+            valueClassName = "net.formiguinhas.enums.FoneTipo"; 
+        }
+    ); 
+    attributesUsedForLocking = (id); 
+    className = "net.formiguinhas.negocios.Fone"; 
+    classProperties = (ddd, numero, tipo, usuarios); 
+    externalName = Fone; 
+    fetchSpecificationDictionary = {}; 
+    name = Fone; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = FoneXUsuario; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = foneId; sourceAttribute = id; }); 
+            name = foneXUsuarios; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {definition = "foneXUsuarios.usuario"; name = usuarios; }
+    ); 
+}

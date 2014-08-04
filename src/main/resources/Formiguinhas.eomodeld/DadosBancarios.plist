@@ -1,0 +1,35 @@
+{
+    attributes = (
+        {
+            adaptorValueConversionMethodName = toString; 
+            columnName = banco; 
+            name = banco; 
+            prototypeName = javaEnum; 
+            valueClassName = "net.formiguinhas.enums.DadosBancariosBanco"; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = usuarioID; 
+            name = usuarioID; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (banco, id, usuarioID); 
+    className = "net.formiguinhas.netDadosBancarios"; 
+    classProperties = (banco, usuario); 
+    externalName = DadosBancarios; 
+    fetchSpecificationDictionary = {}; 
+    name = DadosBancarios; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Usuario; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = usuarioID; }); 
+            name = usuario; 
+        }
+    ); 
+}
